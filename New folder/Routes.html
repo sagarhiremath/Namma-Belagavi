@@ -1,0 +1,439 @@
+<html>
+<head>
+   <title>Namma Belagavi</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family+Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<style>
+/* STYLING OF NAVIGATION BAR */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Josefin Sans',sans-serif;
+}
+.hero{
+	height:30vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("C:/Namma Belagavi/Images/bgu.png");
+	background-size:cover;
+	background-position:center;
+}
+nav{
+	display:flex;
+	align-items:center;
+	justify-content: space between;
+	padding-top:40px;
+	padding-left:1%;
+	padding-right:10%;
+}
+.logo{
+	color:YELLOW;
+	font-size:28px;
+}
+span{
+	color:red;
+}
+nav ul li{
+	list-style-type:none;
+	display:inline-block; 
+	padding:10px 20px;
+}
+nav ul li a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+nav ul li a:hover{
+	color:#ea1538;
+	transition:.3s;
+}
+button
+{
+	background:#f9004d;
+	color:white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: 2s;
+}
+button:hover
+{
+	background: transparent;
+	border: 2px solid #f9004d;
+	cursor:pointer;
+}
+/* END OF STYLING OF NAVIGATION BAR */
+
+/* STYLING OF FOOTER */
+.hero{
+	position:relative;
+	text-align:center;
+	color:white;
+}
+.top-left{
+	position:absolute;
+	top:120px;
+	left:350px;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+/* END OF STYLING OF NAVIGATION BAR */
+
+
+/* STYLING OF SIDE BY SIDE PHOTOS */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* END OF STYLING OF SIDE BY SIDE PHOTOS */
+
+/* STYLING OF TEXTS */
+p1
+{
+    font-size: 22px;
+}
+p2
+{
+    font-size: 22px;
+}
+p3
+{
+    font-size: 22px;
+}
+/* END OF STYLING OF TEXTS */
+</style>
+<body>
+
+<!--DETAILS OF NAVIGATION BAR-->
+   <div class="hero">
+	<nav>
+	 <h2 class="logo">BELA<span>GAVI</span></h2>
+<ul>
+<li><a href="C:/Namma Belagavi/New folder/Home.html">&nbsp;&nbsp;HOME</a></li>
+<li><a href="C:/Namma Belagavi/New folder/Travel.html">Travel</a></li>
+<li><a href="C:/Namma Belagavi/New folder/Food.html">Food</a></li>
+<li><a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay </a></li>
+<li><a href="C:/Namma Belagavi/New folder/Routes.html">Routes</a></li>
+<li><a href="C:/Namma Belagavi/New folder/About us.html">About us</a></li>
+<!--<li><a href="C:/Namma Belagavi/New folder/Registration.html">Login</a></li>-->
+</ul>
+</nav>
+</div>
+<!--END OF DETAILS OF NAVIGATION BAR-->
+
+<!--DETAILS OF CONTENTS-->
+<br><h1><u>Belagavi central Bus stand:-</u></h1>
+<div class="row">
+    <div class="column">
+        <img src="C:/Namma Belagavi/Images/bus stand.jpg" style="width: 100%; height: 500px;">
+        </div>
+    <div class="column">
+        <img src="C:/Namma Belagavi/Images/bus stand2.jpg" style="width: 100%; height: 500px;">
+    </div>
+      </div>
+      <br><p1>Chief Minister Basavaraj Bommai on Tuesday inaugurated a Hi-Tech Central Bus Stand (CBS) at Belagavi, built at a cost of over Rs 32.41 crores.
+        <br>
+        The modern bus station has been built on an area of 3.08 acres with 41 bus bays, bus circulation and parking areas, auto-rickshaw lane, passenger entry/ exit, Terminal building consisting of passenger circulation and waiting areas, ticket/ reservation counters, cloak room, first-aid room, waiting rooms, passenger amenities like drinking water, toilets, yatri nivas etc., restaurant, shops, kiosks and administrative offices, crew restrooms, parcel office and other facilities. The adjacent NWKRTC Divisional Workshop which is is located on 4.68 acres will be taken up in the next phase.</p1>
+       <br><br>
+       <button type="button" onclick="window.location.href='https://www.redbus.in/buses/belagavi-bus-tickets';">Red bus</button>
+<br>
+
+<br><h1><u>Belagavi Railway station:-</u></h1>
+<div class="row2">
+    <div class="column2">
+        <img src="C:/Namma Belagavi/Images/rail3.jpg" style="width: 100%; height: 500px;">
+        </div>
+    <div class="column2">
+        <img src="C:/Namma Belagavi/Images/rail2.jpg" style="width: 100%; height: 500px;">
+    </div>
+    <div class="column2">
+        <img src="C:/Namma Belagavi/Images/rail1.jpg" style="width: 100%; height: 500px;">
+        </div>
+      </div>
+      <p2>Belagavi Railway station is in Belagavi district making it an important railway station in the Indian state of Karnataka. The station code name of Belagavi is ‘BGM’. As part of one of the busiest and populated Indian states, Karnataka, the Belagavi railway station is known amongst the top hundred train ticket booking and train traveling stations of the Indian Railway. The total number of trains that pass through Belagavi (BGM) junction is 53.</p><br>
+      <button type="button" onclick="window.location.href='https://www.irctc.co.in/nget/train-search';">Train Booking</button>
+      <button type="button" onclick="window.location.href='https://www.railyatri.in/train-ticket';">IRCTC</button>
+      <br>
+
+<br><h1><u>Belagavi Airport:-</u></h1>
+<div class="row2">
+    <div class="column2">
+      <img src="C:/Namma Belagavi/Images/airport1.jpg" style="width: 100%; height: 500px;">
+          </div>
+          <div class="column2">
+          <img src="C:/Namma Belagavi/Images/airport2.jpg" style="width: 100%; height: 500px;">
+          </div>
+          <div class="column2">
+          <img src="C:/Namma Belagavi/Images/airport3.jpg" style="width: 100%; height: 500px;">
+          </div>
+        </div>      
+    <div class="row2">
+    <div class="column2">
+      <img src="C:/Namma Belagavi/Images/plane1.jpg" style="width: 100%; height: 500px;">
+          </div>
+          <div class="column2">
+          <img src="C:/Namma Belagavi/Images/plane2.jpg" style="width: 100%; height: 500px;">
+          </div>
+          <div class="column2">
+        </div>   
+      </div> 
+  <h1>About:-</h1>  <br>
+        
+    <p3>1) It is established by Royal Air Force in 1942. Indian Airlines commenced operations from 1947.
+    <br><br>
+    2) From the year 1989 to 2011, various private Airlines operated at Belagavi Airport.
+    <br><br>
+    3) From the year 2012 M/s. Spicejet started their operation and continued till date. Upto May-2018, M/s. Spicejet operated to 4 major cities i.e. Mumbai, Hyderabad, Bengaluru &nbsp;&nbsp;&nbsp;&nbsp;& Chennai.
+    <br><br>
+    4) UDAN-3 changed the history of Belagavi Airport. 13 city connections awarded to 5 major Airlines under UDAN-3.
+    <br><br>
+    5) From 1st May-2019 to till date, there is 13 cities direct flights (Bengaluru, Mumbai, Pune, Hyderabad, Kadappa, Mysuru, Indore, Ahmedabad, Surat, Tirupati, Jodhpur, &nbsp;&nbsp;&nbsp;&nbsp;Nasik & Surat) by 5 Airlines i.e. M/s. Alliance Air, Spicejet, Star Air, Indigo & Trujet and Jaipur & Nagpur yet to be connected by M/s. Star Air Airline.
+    <br><br>
+    6) Night parking permission granted for two (02) no’s of Aircrafts EMB-145 of M/s. Star Air (Ghodawat Group).  </p3>
+    <br><br>
+
+        <button type="button" onclick="window.location.href='https://www.goindigo.in/domestic-flights/flights-to-belagavi.html';">Flight to Belagavi</button>
+        <button type="button" onclick="window.location.href='https://corporate.spicejet.com/default.aspx';">SpiceJet</button>
+        <button type="button" onclick="window.location.href='https://www.goindigo.in/?cid=Display|Affiliate|LF|LA11|177_1753';">Indigo</button>
+        <button type="button" onclick="window.location.href='https://starair.in/';">StarAir</button>
+<!--END OF DETAILS OF CONTENT-->
+
+<!--DETAILS OF FOOTER-->
+        <footer class="footer-distributed">
+	<div class="footer-left">
+		<h3>Bela<span>gavi</span></h3>
+
+		<p class="footer-links">
+			<a href="C:/Namma Belagavi/New folder/home.html">Home</a>
+                |
+                <a href="C:/Namma Belagavi/New folder/About us.html">About</a>
+                |
+                <a href="C:/Namma Belagavi/New folder/Food.html">Food</a>
+                |
+                <a href="C:/Namma Belagavi/New folder/Restauraunts.html">Rooms</a>
+		</p>
+
+		<p class="footer-company-name">Copyright © 2023 <strong>BELAGAVI</strong> All rights reserved</p>
+	</div>
+
+	<div class="footer-center">
+		<div>
+			<i class="fa fa-map-marker"></i>
+			<p><span>Belagavi</span>
+				Karnataka</p>
+		</div>
+
+			<div>
+			<i class="fa fa-envelope"></i>
+			<p><a href="mailto:sagarhiremathssh@gmail.com">Belagavi@gmail.com</a></p>
+		</div>
+	</div>
+	<div class="footer-right">
+		<p class="footer-company-about">
+			<span>About the website</span>
+			<strong>BELAGAVI</strong> is an website that provides you the best details of the Belagavi city.<br>#NAMMA BELAGAVI 
+		</p>
+		
+	</div>
+</footer>
+<!--END OF DETAILS OF FOOTER-->
+
+</body>
+</html>

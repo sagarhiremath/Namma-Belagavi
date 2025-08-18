@@ -1,0 +1,886 @@
+<html>
+<head>
+   <title>Namma Belagavi</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family+Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+/* STYLING OF NAVIGATION BAR */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Josefin Sans',sans-serif;
+}
+.hero{
+	height:22vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("C:/Namma Belagavi/Images/bgu.png");
+	background-size:cover;
+	background-position:center;
+}
+nav{
+	display:flex;
+	align-items:center;
+	justify-content: space between;
+	padding-top:40px;
+	padding-left:1%;
+	padding-right:10%;
+}
+.logo{
+	color:YELLOW;
+	font-size:28px;
+}
+span{
+	color:red;
+}
+nav ul li{
+	list-style-type:none;
+	display:inline-block; 
+	padding:10px 20px;
+}
+nav ul li a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+nav ul li a:hover{
+	color:#ea1538;
+	transition:.3s;
+}
+
+/* END OF NAVIGATION BAR STYLING */
+
+
+/*STYLING OF SLIDES*/
+*
+{
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,.dot:hover {
+  background-color: #111111;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {
+  opacity: .4
+  }
+to {
+  opacity: 1
+  }
+}
+@keyframes fade {
+from {
+  opacity: .4
+  }
+to {
+  opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+.prev,.next,.text {
+  font-size: 11px
+  }
+}
+
+/*END OF SLIDES STYLING*/
+
+/* CONTENT DETAILS TEXT STYLING */
+p1
+{
+	font-size: 18px;
+}
+/* CONTENT DETAILS TEXT STYLING */
+
+/* STYLING OF BACKGROUND OF A PAGE */
+body
+{
+	background-image:url('C:/Namma Belagavi/Images/bgpr3.jfif');
+	background-size: cover;
+	background-position: center;
+}
+
+/* END OF STYLING OF BACKGROUND PAGE */
+
+
+
+
+/* FOOTER STYLING */
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+/* END OF FOOTER STYLING */
+
+/* CONTENT STYLING (IMAGE AND TEXT) */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+  padding: 10px;
+}
+
+.text1 {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.Heading
+{
+  padding: 10px;
+}
+
+/* END OF CONTENT STYLING (IMAGE AND TEXT) */
+
+
+/* STYLING OF PINK BUTTONS */
+button {
+		border: none;
+		background: #f9004d;
+		color: white;
+		text-decoration: none;
+		border: 2px solid transparent;
+		font-weight: bold;
+		font-size: 15px;
+		padding: 13px 30px;
+		border-radius: 30px;
+		transition: 1s;
+	}
+
+	button:hover {
+		background: transparent;
+		border: 2px solid #f9004d;
+		cursor: pointer;
+		transform: scale(1.3);
+	}
+
+  /* END OF STYLING OF PINK BUTTONS */
+</style>
+<body>
+<!-- NAVIGATION BAR CODE -->
+    <div class="hero">
+  <nav>
+    <h2 class="logo">BELA<span>GAVI</span></h2>
+ <ul>
+ <li><a href="C:/Namma Belagavi/New folder/Home.html">&nbsp;&nbsp;HOME</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Travel.html">Travel</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Food.html">Food</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Routes.html">Routes</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/About us.html">About us</a></li>
+ <!--<li><a href="D:/Arun/Mini projects/DSA projects/New folder/Registration.html">Login</a></li>-->
+
+ </ul>
+ </nav>
+ </div>
+ 		
+ <!-- END OF NAVIGATION BAR CODE -->
+	
+
+<!-- MAIN BODY OF THE WEBSITE -->
+<h1 class="Heading"><u>New Grand:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/New grand.jpg" style="width: 800px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1 class="demo1">Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Casual Dining<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        8:00 am - 8:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/New+Grand+Restaurant/@15.8661139,74.5061133,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf66ae4f6bdd13:0xc921000f29838192!8m2!3d15.8660198!4d74.5082861';">Location</button>
+    </div>
+  </div>
+	
+<h1 class="Heading"><u>Sharma sweets:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/sharma sweets.jpg" style="width: 800px; height: 450px;">
+    </div>
+      <div class="text1">
+        <h1>Type:<br>Fine Dining, Casual Dining, Desserts Shop, Quick Bite Outlet, Sweet Shop<br><br>
+          Timings:<br>
+          Mon - Sun<br>
+          8:00 am - 9:00 pm</h1>
+          <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Sharma+Sweets+%26+Restaurant/@15.8593393,74.5064059,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf66a4c2826f03:0x7372b8c121102ef9!8m2!3d15.8593393!4d74.5085946';">Location</button>
+      </div>
+    </div>
+
+<h1 class="Heading"><u>Ajanta cafe:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/ajanta.jpg" style="width: 800px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:<br>Quick bite Outlet <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 
+        Timings:<br> 
+        Mon - Sun<br> 
+        8:15 am - 8:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Ajanta+Cafe/@15.8594073,74.4954167,15z/data=!4m10!1m2!2m1!1sajanta+cafe+belgaum+menu!3m6!1s0x3bbf66bad812aea1:0xa629e35caae7f89c!8m2!3d15.8594073!4d74.5118962!15sChhhamFudGEgY2FmZSBiZWxnYXVtIG1lbnUiAkABWhoiGGFqYW50YSBjYWZlIGJlbGdhdW0gbWVudZIBFXZlZ2V0YXJpYW5fcmVzdGF1cmFudOABAA!16s%2Fg%2F1tdj_0r6';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Kaveri coldrinks:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Kaveri colddrinks.jpg" style="width: 520px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:<br>
+        Fine Dining, Cafe, Casual Dining, Desserts Shop<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        10:30 am - 10:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Hande%E2%80%99s+Kaveri+Cold+Drink+House/@15.8584985,74.5083181,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf66a4c7d544f7:0x2b0ffacecad88f44!8m2!3d15.8584985!4d74.5105068';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Mohanlal bakery:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Mohanlal2.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:<br>Bakery<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+        Timings:<br>
+        Mon:
+        6:00 am - 8:30 pm<br>
+        Tue:
+        Closed - Closed<br>
+        Wed - Sun:
+        6:00 am - 8:30 pm</h1>
+        <br><button type="button"
+        onclick="window.location.href='https://www.google.com/maps?q=mohanlal+bakery+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj-j67i-fT8AhVt4jgGHdwFAPkQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Sun and sand:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/sun n sand.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Casual Dining<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        10:30 am - 3:30 pm<br>
+        6:30 pm - 11:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Sun+and+Sand+Restaurant/@15.8680736,74.5069901,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf66ae76fd9443:0xfcd3feb9680246fd!8m2!3d15.8680607!4d74.5091759';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Top-in-town:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/tit.jpg" style="width: 600px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:<br>
+        Desserts, Chinese, Mughlai, North Indian, Continental<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        1:00 pm - 12:00 am</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=top+in+town+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj_5oqJ-vT8AhWDgGMGHZAgD3UQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Swami bakery:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/swami bakery.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:<br>Bakery<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+        Timings:<br>
+        Mon - Sun<br>
+        9:30 am - 9:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=swami+bakery+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjhs8iV-vT8AhXpyKACHUWsCN4Q_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Shetty snacks:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/shetty sweets.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Chinese, South Indian, Street Food<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        1:45 pm - 9:45 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=shetty+snacks+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwim_Pil-vT8AhVs6jgGHU26DcgQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Kalyani sweets:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/kalyani sweets.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Sweet Shop, Indian Sweet Shop   <br>
+      <br>Timings:<br>
+      Mon - Sun<br>
+      7:00 am - 10:00 pm</h1>
+      <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=kalyani+sweets+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj80Nmy-vT8AhU1wzgGHTfLDqMQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Hotel panchamrut:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/panchamrut.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Fine Dining, Casual Dining<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        7:00 am - 11:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Panchamruth+Hotel/@15.8424898,74.5008689,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf669c574d2af3:0xebb07a1abad603e2!8m2!3d15.8424898!4d74.5030576';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Paratha corner:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/PC.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Quick Bite Outlet<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        11:00 am - 11:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=paratha+corner+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwicxLKb-_T8AhW51zgGHaZLDgIQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Annapurnashweri:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Annapurneshwari.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Casual dining<br><br> Timings:<br>
+        Mon - Sun<br>
+        11:30 am - 10:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Annapurneshwari+Thali+Restaurant,+Ayodhyanagar/@15.8752608,74.4800711,14z/data=!4m10!1m2!2m1!1sAnnapurneshwari+hotel+belgaum!3m6!1s0x3bbf614cc19e4dd9:0xf3457f581d8a4345!8m2!3d15.8752608!4d74.5130301!15sCh1Bbm5hcHVybmVzaHdhcmkgaG90ZWwgYmVsZ2F1bVofIh1hbm5hcHVybmVzaHdhcmkgaG90ZWwgYmVsZ2F1bZIBF3NvdXRoX2luZGlhbl9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5sY1hWTFVFNTNFQUXgAQA!16s%2Fg%2F11bx9pcbp6';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Charaka mess:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/charaka.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        South Indian<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        12:00 pm - 4:00 pm<br>
+        7:45 pm - 10:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=charaka+mess+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjJnoDA-_T8AhWU-DgGHdkLBUUQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+  <h1 class="Heading"><u>Tinniri:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Tinniri.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      South Indian<br><br>
+      Timings:<br>
+      Mon - Sun<br>
+      7:00 am - 9:00 pm</h1>
+      <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=tinniri&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjCyJDN-_T8AhXHyzgGHVimD88Q_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Food court (Tinisu katte):</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/tinisu katte.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Fastfoods<br><br>
+        Timings:<br>
+        Mon - Sat<br>
+        7:00 am - 11:00 pm<br>
+        Sun<br>
+        Closed - Closed</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Tinisu+katte+-+(Belagavi)/@15.8418332,74.5062161,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf640ee8408ec5:0x30e37850e96ba495!8m2!3d15.8418248!4d74.5083723';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Santorni cafe:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Santorni.jpg" style="width: 1130px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:<br>
+        Pure Vegetarian, Chinese, North Indian, Italian, Indian, Mexican, Greek, Fast Food<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        11:00 am - 11:00 pm </h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=Santorini+cafe+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiryoPs-_T8AhU04zgGHfyRDE4Q_AUoAnoECAEQBA';">Location</button>
+    </div>
+  </div>
+   
+<h1 class="Heading"><u>Kareems kitchen:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/kareems kitchen.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:<br>
+        Quick food Outlet<br><br>
+        Timings:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Mon - Sun<br>
+        11:00 am - 10:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=Kareems+kitchen+belagavi&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiayoj5-_T8AhX1jWMGHTbXCgkQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Master chef's:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/masterchef.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Casual dining<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        11:30 am - 10:45 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Master+Chef/@15.8703645,74.4961672,14z/data=!4m10!1m2!2m1!1sMasterchef+belagavi!3m6!1s0x3bbf614c727ef413:0xaf3bb98812ceb939!8m2!3d15.8784986!4d74.5164771!15sChNNYXN0ZXJjaGVmIGJlbGFnYXZpWhUiE21hc3RlcmNoZWYgYmVsYWdhdmmSARFpbmRpYW5fcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VRd2NrbHRYMlpuRUFF4AEA!16s%2Fg%2F1q6n2x5t6';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Basveshwar khanavali:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Basveshwar khanawali.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisine:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+          Health food<br><br>
+          Timings:<br>
+          Mon - Sun<br>
+          12:00 pm - 4:00 pm<br>
+          8:00 pm - 11:00 pm</h1>
+          <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Basweshwar+Khanavali/@15.8709688,74.5084628,15z/data=!4m10!1m2!2m1!1sBasaveshwara+khanavali+belagavi!3m6!1s0x3bbf614c5d2a98af:0xdd534e3585fc7327!8m2!3d15.8780216!4d74.5153481!15sCh9CYXNhdmVzaHdhcmEga2hhbmF2YWxpIGJlbGFnYXZpWiEiH2Jhc2F2ZXNod2FyYSBraGFuYXZhbGkgYmVsYWdhdmmSARFpbmRpYW5fcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOaGNXVmxkMkZuRUFF4AEA!16s%2Fg%2F11dxcv9s93';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Riddhi's kitchen:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/Riddhis kitchen.jpg" style="width: 600px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisine:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Desserts, Chinese, North Indian, Fast Food<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        11:30 am - 11:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=riddhis+kitchen&um=1&ie=UTF-8&sa=X&ved=2ahUKEwig2tCt_PT8AhWR3aACHeMFAkEQ_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Cosmo kadhae:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/cosmo.jpg" style="width: 890px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Cuisines:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Pure Vegetarian, Desserts, Chinese, North Indian, Continental<br><br>
+        Timings<br>
+        Mon - Sun<br>
+        12:00 pm - 3:30 pm<br>
+        7:15 pm - 10:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=Cosmo+kadhae+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiFj9G8_PT8AhXT4TgGHXrRCxAQ_AUoAnoECAEQBA';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Niyaaz:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/niyazz.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Quick bite Outlet<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        1:00 am - 11:00 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Niyaaz+Restaurant+(Nehru+Nagar+Branch)/@15.8615258,74.4939419,14z/data=!4m10!1m2!2m1!1sniyaaz+belgaum!3m6!1s0x3bbf614eaf3e08db:0x1188a979d9021e84!8m2!3d15.8805298!4d74.5163477!15sCg5uaXlhYXogYmVsZ2F1bVoQIg5uaXlhYXogYmVsZ2F1bZIBEmJpcnlhbmlfcmVzdGF1cmFudOABAA!16s%2Fg%2F11c1wnbjsj';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Sri Panjurli:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/panjurli.jpg" style="width: 1100px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Fine Dining, Cafe, Desserts Shop, Food Court, Lounge, Juice Bar, Juice Center<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        11:00 am - 11:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Shree+Panjurli+Lunch+%26+Dinner/@15.8512974,74.4387863,12z/data=!4m10!1m2!2m1!1spanjurli+belgaum!3m6!1s0x3bbf65cc1c8ca3fb:0x40716042cabea4c6!8m2!3d15.8255136!4d74.4984499!15sChBwYW5qdXJsaSBiZWxnYXVtWhIiEHBhbmp1cmxpIGJlbGdhdW2SAQpyZXN0YXVyYW504AEA!16s%2Fg%2F11j34xkgdv';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Hotel Shabari:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/shabari.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Casual dining<br><br>
+        Timings:<br>
+        Mon - Sat<br>
+        9:30 am - 6:30 pm<br>
+        Sun<br>
+        Open 24 Hrs</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps/place/Hotel+Shabari/@15.8484137,74.4745401,13z/data=!4m10!1m2!2m1!1sShabari+hotel+belagavi!3m6!1s0x3bbf61845c25b6cf:0x25c67362fe6e473d!8m2!3d15.8785929!4d74.5157208!15sChZTaGFiYXJpIGhvdGVsIGJlbGFnYXZpWhgiFnNoYWJhcmkgaG90ZWwgYmVsYWdhdmmSARRicmVha2Zhc3RfcmVzdGF1cmFudJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VScmQyRlVaVzUzUlJBQuABAA!16s%2Fg%2F11fd5zxpn8';">Location</button>
+    </div>
+  </div>
+
+<h1 class="Heading"><u>Wild sugar:</u></h1><br>
+  <div class="container">
+    <div class="image">
+      <img src="C:/Namma Belagavi/Images/wild sugar.jpg" style="width: 500px; height: 450px;">
+    </div>
+    <div class="text1">
+      <h1>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        Fastfood Outlet<br><br>
+        Timings:<br>
+        Mon - Sun<br>
+        9:00 am - 10:30 pm</h1>
+        <br><button type="button"onclick="window.location.href='https://www.google.com/maps?q=wild+sugar+belgaum&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjz4f2B_fT8AhU97zgGHVE6C30Q_AUoAXoECAEQAw';">Location</button>
+    </div>
+  </div>
+
+<!-- END OF MAIN BODY OF THE WEBSITE -->
+    
+<!-- FOOTER DETAILS -->
+	<footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Bela<span>gavi</span></h3>
+            <p class="footer-links">
+              <a href="C:/Namma Belagavi/New folder/home.html">Home</a>
+              <a href="C:/Namma Belagavi/New folder/About us.html">About</a>
+              <a href="C:/Namma Belagavi/New folder/Food.html">Food</a>
+              <a href="C:/Namma Belagavi/New folder/Restauraunts.html">Rooms</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2023 <strong>BELAGAVI</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Belagavi</span>Karnataka</p>
+            </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:sagarhiremathssh.co@gmail.com">Belagavi@gmail.com</a></p>
+        </div>
+      </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the website</span>
+                <strong>BELAGAVI</strong> is an website that provides you the best details of the Belagavi city.<br>#NAMMA BELAGAVI 
+            </p>
+        </div>
+    </footer>
+
+    <!-- END OF FOOTER DETAILS -->
+
+	</body>
+ </html>

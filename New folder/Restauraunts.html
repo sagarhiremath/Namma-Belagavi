@@ -1,0 +1,747 @@
+<html>
+<head>
+   <title>Namma Belagavi</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family+Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* STYLING OF NAVIGATION BAR */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Josefin Sans',sans-serif;
+}
+.hero{
+	height:22vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("C:/Namma Belagavi/Images/bgu.png");
+	background-size:cover;
+	background-position:center;
+}
+nav{
+	display:flex;
+	align-items:center;
+	justify-content: space between;
+	padding-top:40px;
+	padding-left:1%;
+	padding-right:10%;
+}
+.logo{
+	color:YELLOW;
+	font-size:28px;
+}
+span{
+	color:red;
+}
+nav ul li{
+	list-style-type:none;
+	display:inline-block; 
+	padding:10px 20px;
+}
+nav ul li a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+nav ul li a:hover{
+	color:#ea1538;
+	transition:.3s;
+}
+button{
+	border:none;
+	background:#ea1538;
+	padding:12px 30px;
+	border-radius:30px;
+	color:white;
+	font-weight:bold;
+	font-size:15px;
+	transition:.4s;
+}
+button:hover{
+	transform:scale(1.3);
+	cursor:pointer;
+}
+/* END OF STYLING OF NAVIGATION BAR */
+
+
+/* STYLING OF SLIDES OF HOTELS */
+* {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* END OF STYLING OF SLIDE OF HOTELS */
+
+p1
+{
+	font-size: 18px;
+}
+
+body
+{
+	background-image:url('C:/Namma Belagavi/Images/bgpr3.jfif');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* STYLING OF FOOTER */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #eaf0f2;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+/* END OF STYLING OF FOOTER */
+</style>
+<body>
+
+  <!--DETAILS OF NAVIGATION BAR-->
+    <div class="hero">
+     <nav>
+      <h2 class="logo">BELA<span>GAVI</span></h2>
+ <ul>
+ <li><a href="C:/Namma Belagavi/New folder/Home.html">&nbsp;&nbsp;HOME</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Travel.html">Travel</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Food.html">Food</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/Routes.html">Routes</a></li>
+ <li><a href="C:/Namma Belagavi/New folder/About us.html">About us</a></li>
+ <!--<li><a href="C:/Namma Belagavi/New folder/Registration.html">Login</a></li>-->
+ </ul>
+ </nav>
+ </div>
+<!--END OF DETAILS OF NAVIGATION BAR-->
+	
+<!--DETAILS OF SLIDES-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 14</div>
+	  <img src="C:/Namma Belagavi/Images/fairfield.png" style="width:100%" height="420px">
+	  <div class="text">Fairfield by Marriot</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 14</div>
+	  <img src="C:/Namma Belagavi/Images/eefa.png" style="width:100%" height="420px">
+	  <div class="text">Eefa Hotel</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 14</div>
+	  <img src="C:/Namma Belagavi/Images/ramdev.jpg" style="width:100%" height="420px">
+	  <div class="text">Hotel Ramdev</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">4 / 14</div>
+		<img src="C:/Namma Belagavi/Images/pai resorts.jpg" style="width:100%" height="420px">
+		<div class="text">Pie resort</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 14</div>
+		<img src="C:/Namma Belagavi/Images/uk ss3.jpg" style="width:100%" height="420px">
+		<div class="text">UK 27 The Fern</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">6 / 14</div>
+		<img src="C:/Namma Belagavi/Images/uk ss1.jpg" style="width:100%" height="420px">
+		<div class="text">UK 27</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">7 / 14</div>
+		<img src="C:/Namma Belagavi/Images/sanman.jpg" style="width:100%" height="420px">
+		<div class="text">Hotel Sanman</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">8 / 14</div>
+		<img src="C:/Namma Belagavi/Images/sankam.jpg" style="width:100%" height="420px">
+		<div class="text">Sankam hotel</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">9 / 14</div>
+		<img src="C:/Namma Belagavi/Images/Aadarsh.jpg" style="width:100%" height="420px">
+		<div class="text">Hotel Aadarsh</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">10 / 14</div>
+		<img src="C:/Namma Belagavi/Images/native.Avif" style="width:100%" height="420px">
+		<div class="text">Native by Chancery hotels</div>
+	  </div>
+
+
+	  <div class="mySlides fade">
+		<div class="numbertext">11 / 14</div>
+		<img src="C:/Namma Belagavi/Images/presidency club.jpg" style="width:100%" height="420px">
+		<div class="text">Presidency club</div>
+	  </div>
+
+
+	  <div class="mySlides fade">
+		<div class="numbertext">12 / 14</div>
+		<img src="C:/Namma Belagavi/Images/CB2.jpg" style="width:100%" height="420px">
+		<div class="text">Central Boutique</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">13 / 14</div>
+		<img src="C:/Namma Belagavi/Images/samudra.Avif" style="width:100%" height="420px">
+		<div class="text">Hotel Samudra</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">14 / 14</div>
+		<img src="C:/Namma Belagavi/Images/regenta.Avif" style="width:100%" height="420px">
+		<div class="text">Regenta resort</div>
+	  </div>
+
+	    
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(9)"></span>
+	<span class="dot" onclick="currentSlide(10)"></span>
+	<span class="dot" onclick="currentSlide(11)"></span>
+	<span class="dot" onclick="currentSlide(12)"></span>
+	<span class="dot" onclick="currentSlide(13)"></span>
+	<span class="dot" onclick="currentSlide(14)"></span>
+	<span class="dot" onclick="currentSlide(15)"></span>
+  </div>
+
+  <!--DETAILS OF JAVASCRIPT OF SLIDES-->
+ <script>let slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}
+	  slides[slideIndex-1].style.display = "block";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+  <!--END OF DETAILS OPF JAVASCRIPT OF SLIDES-->
+  <!--END OF DETAILS OF SLIDES-->
+
+  <!--DETAILS OF HOTELS-->
+	<h1><u>Fairfield by Marriot:</u></h1><br>
+	<center><a href="https://www.marriott.com/en-us/hotels/ixgfi-fairfield-by-marriott-belagavi/overview/"><img src="C:/Namma Belagavi/Images/fairfield.png" style="width:40%" height="300px"></a></center>
+	<br><p1>Fairfield Marriott, Belagavi: Experience unparalleled luxury at this opulent property offering well-appointed rooms, an incredible restaurant, an outdoor pool and a wide range of upscale amenities.</p1>
+	
+	
+	<h1><u><br>UK 27 The fern:</u></h1><br>
+	<center><a href="https://www.fernhotels.com/uk-the-fern-belagavi"><img src="C:/Namma Belagavi/Images/uk ss3.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>UK 27 The Fren:Experience a luxurious stay at this lavish property featuring well-appointed rooms, multiple dining spots, a swimming pool, an exclusive spa and world-class amenities.</p1>
+
+	<h1><u><br>Pai Resort:</u></h1><br>
+	<center><a href="https://pairesorts.in/"><img src="C:/Namma Belagavi/Images/pai resorts.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>Pai Resort:Luxurious Resort with a lake view, at a prime location with the best hospitality and exceptional amenities, awaits you at this Resort.</p1>
+
+
+	<h1><u><br>Hotel Ramdev:</u></h1><br>
+	<center><a href="https://www.hotelramdevinternational.com/index.php"><img src="C:/Namma Belagavi/Images/ramdev.jpg" style="width:40%" height="300px"></a></center>
+		<br><p1>Hotel Ramdev is established in the year 1969 & inaugurated by Hon’ble Shree Veerendra Patil (Chief Minister of Mysore), Hotel Ramdev in Belagavi Nehru Nagar, Belagavi is a top player in the category Hotel & Restaurant Services in the Belagavi.</p1>
+	
+
+	<h1><u><br>Eefa hotel:</u></h1><br>
+	<center><a href="https://www.eefahotels.com/"><img src="C:/Namma Belagavi/Images/eefa.png" style="width:40%" height="300px"></a></center>
+		<br><p1>Hotel Eefa is a 3 star luxury hotel in Belgaum with intelligent amenities and essential services which speak to the needs of the savvy, budget-conscious traveller who seeks quality and affordability. Located in Belgaum city of Karnataka which is the Divisional Headquarters of North Karnataka, we are one of the most popular hotels in Belgaum's prime business location and discounted room rates are the main reason for our popularity.</p1>
+	
+	<h1><u><br>Hotel Sanman Deluxe:</u></h1><br>
+	<center><a href="https://sanmandeluxe.in/"><img src="C:/Namma Belagavi/Images/sanman.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>Hotel Sanman Deluxe:Welcome to Hotel Sanman Deluxe, your Belagavi “home away from home.” Hotel Sanman Deluxe aims to make your visit as relaxing and enjoyable as possible, which is why so many guests continue to come back year after year.</p1>
+	
+	<h1><u><br>Hotel Sankam:</u></h1><br>
+	<center><a href="https://sankam.in/"><img src="C:/Namma Belagavi/Images/sankam.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>Hotel Sankam:Featuring a warm ambience and luxurious accommodation, Hotel Sankam Residency is the perfect place to seek relaxation and revitalisation.</p1>
+
+
+	<h1><u><br>Hotel Aadarsh palace:</u></h1><br>
+	<center><a href="https://hoteladarshapalace.com/"><img src="C:/Namma Belagavi/Images/Aadarsh.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>The aroma of sandalwood, the pleasant concord and the magnificent views of the landscapes of Belgaum greets you at Adarsha Palace, embellished with a conference room and swimming pool.</p1>
+
+
+	<h1><u><br>Hotel Native by Chancery hotels:</u></h1><br>
+	<center><a href="https://www.makemytrip.com/hotels/native_by_chancery_hotels-details-belgaum.html"><img src="C:/Namma Belagavi/Images/native.Avif" style="width:40%" height="300px"></a></center>
+	<br><p1>At the foothills of Western Ghats, Native by Chancery Hotels is a contemporary hotel with spacious rooms and a pure vegetarian restaurant.</p1>
+
+
+	<h1><u><br>Belgaum presidency Club:</u></h1><br>
+	<center><a href="https://www.belgaumpresidencyclub.com/platinum-membership-plan"><img src="C:/Namma Belagavi/Images/presidency club.jpg" style="width:40%" height="300px"></a></center>
+	<br><p1>Mayur Belgaum Presidency Hotel & Club has an outdoor swimming pool, garden, a shared lounge and terrace in Belgaum. Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi throughout the property. Guests can use a bar.</p1>
+
+
+	<h1><u><br>Central Botique:</u></h1><br>
+	<center><a href="https://centralhotel.co.in/"><img src="C:/Namma Belagavi/Images/CB2.jpg" style="width:40%" height="350px"></a></center>
+	<br><p1>This incredible property offers well-appointed rooms, an elegant restaurant, a banquet hall and easy access to popular areas of the city.</p1>
+
+
+	<h1><u><br>Hotel Samudra:</u></h1><br>
+	<center><a href="http://hotelsamudra.in/"><img src="C:/Namma Belagavi/Images/samudra.Avif" style="width:40%" height="300px"></a></center>
+	<br><p1>Set amidst the business district of the beautiful city of Belgaum, Hotel Samudra offers the best of comfort and luxury with the warmest hospitality.</p1>
+
+
+	<h1><u><br>Regenta Resort :</u></h1><br>
+	<center><a href="https://www.royalorchidhotels.com/regenta-resort-belagavi/overview"><img src="C:/Namma Belagavi/Images/regenta.Avif" style="width:40%" height="300px"></a></center>
+	<br><p1>Experience unparalleled luxury at this opulent property offering well-appointed rooms, an incredible restaurant, a full-service spa and easy access to IT parks and corporate hubs.</p1>
+<!--END OF DETAILS OF HOTELS-->
+
+<!--DETAILS OF FOOTER-->
+	<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Bela<span>gavi</span></h3>
+
+            <p class="footer-links">
+              <a href="C:/Namma Belagavi/New folder/home.html">Home</a>
+              |
+              <a href="C:/Namma Belagavi/New folder/About us.html">About </a>
+              |
+              <a href="C:/Namma Belagavi/New folder/Food.html">Food</a>
+              |
+              <a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2023 <strong>BELAGAVI</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Belagavi</span>
+                    Karnataka</p>
+            </div>
+
+                <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagarhiremathssh@gmail.com">Belagavi@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the website</span>
+                <strong>BELAGAVI</strong> is an website that provides you the best details of the Belagavi city.<br>#NAMMA BELAGAVI 
+            </p>
+        </div>
+    </footer>
+
+<!--END OF DETAILS OF FOOTER-->
+</body>
+ </html>
