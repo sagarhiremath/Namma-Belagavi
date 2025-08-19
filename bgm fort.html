@@ -7,7 +7,6 @@
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family+Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <style>
-  /* STYLING OF NAVIGATION BAR */
 *{
     padding:0;
     margin:0;
@@ -17,7 +16,7 @@
 .hero{
 	height:30vh;
 	width:100%;
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("C:/Namma Belagavi/Images/a.jpg");
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./Images/a.jpg");
 	background-size:cover;
 	background-position:center;
 }
@@ -50,26 +49,21 @@ nav ul li a:hover{
 	color:#ea1538;
 	transition:.3s;
 }
-button
-{
-	background:#f9004d;
+button{
+	border:none;
+	background:#ea1538;
+	padding:12px 30px;
+	border-radius:30px;
 	color:white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: 2s;
+	font-weight:bold;
+	font-size:15px;
+	transition:.4s;
 }
-button:hover
-{
-	background: transparent;
-	border: 2px solid #f9004d;
+button:hover{
+	transform:scale(1.3);
 	cursor:pointer;
 }
-/* END OF STYLING OF NAVIGATION BAR */
 
-/* STYLING OF MAIN PHOTO AND DETAILS OF PLACE */
 .hero{
 	position:relative;
 	text-align:center;
@@ -87,7 +81,7 @@ button:hover
 	padding: 78px 0px;
 	box-sizing: border-box;
 }
-.demo2 img
+.demo1 img
 {
 	height: 300px;
 	width:420px;
@@ -126,15 +120,32 @@ span
 }
 .demo2-text.p
 {
-	color: white;
+	color: #fcfc;
 	letter-spacing: 5px;
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 45px;
 }
-/* END OF STYLING OF MAIN PHOTO AND DETAILS OF PLACE */
+button
+{
+	background:#f9004d;
+	color:white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: 2s;
+}
+button:hover
+{
+	background: transparent;
+	border: 2px solid #f9004d;
+	cursor:pointer;
+}
 
-/* STYLING OF SLIDES */
+
+
 * {
         box-sizing: border-box
       }
@@ -243,9 +254,60 @@ span
           font-size: 11px
         }
       }
-/* END OF STYLING OF SLIDES */
 
-/* STYLING OF FOOTER */ 
+
+
+
+
+
+
+
+
+	  @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #eaf0f2;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
 .footer-distributed {
     background-color: #2d2a30;
     box-sizing: border-box;
@@ -403,58 +465,69 @@ span
         margin-left: 0;
     }
 }
-/* END OF STYLING OF FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 <body>
-<!--DETAILS OF NAVIGATION BAR-->
     <div class="hero">
      <nav>
       <h2 class="logo">BELA<span>GAVI</span></h2>
  <ul>
- <li><a href="C:/Namma Belagavi/index.html">&nbsp;&nbsp;HOME</a></li>
- <li><a href="C:/Namma Belagavi/New folder/Travel.html">Travel</a></li>
- <li><a href="C:/Namma Belagavi/New folder/Food.html">Food</a></li>
- <li><a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay</a></li>
- <li><a href="C:/Namma Belagavi/New folder/Routes.html">Routes</a></li>
- <li><a href="C:/Namma Belagavi/New folder/About us.html">About us</a></li>
- <!--<li><a href="C:/Namma Belagavi/New folder/Registration.html">Login</a></li>-->
+ <li><a href="./index.html">&nbsp;&nbsp;HOME</a></li>
+ <li><a href="./Travel.html">Travel</a></li>
+ <li><a href="./Food.html">Food</a></li>
+ <li><a href="./Restauraunts.html">Hotels/Stay</a></li>
+ <li><a href="./Routes.html">Routes</a></li>
+ <li><a href="./About us.html">About us</a></li>
+ <!--<li><a href="D:/Arun/Mini projects/DSA projects/New folder/Registration.html">Login</a></li>-->
+
  </ul>
  </nav>
  </div>
-
- <!--END OF DETAILS OF NAVIGATION BAR-->
-
- <!--DETAILS OF CONTENTS OF PLACE AND PHOTO-->
  		<section class="demo1">
 			<div class="main">
-				<img src="C:/Namma Belagavi/Images/kbl3.jpg" style="width:4	0%" height="350px">
+				<img src="./Images/bgm fort2.jpg">
 				<div class="demo2-text">
-					<h1>SRI MAHALAXMI TEMPLE</h1>
-					<h5>Holy shrine of <span>Belagavi</span></h5>
-					<p>A regional Form of goddess lakshmi in Belagavi , Karnataka .Mahalakshmi the central deity of Devi Mahatmyam.This great power of all powers is conceived of by the devout worshipper in different forms in her three Avatars namely Shri Mahakali or Durga, Shri Mahalakshmi and Shri MahaSarswati.
-                        <br>This Belagavi Mahalaxmi Jatra is celebrated once in a 25 years with a very big occasions. </p>
-				<br><button type="button" onclick="window.location.href='https://www.google.com/maps/place/VG47%2BM9V+Sri+Mahalaxmi+Temple,+Raviwar+Peth,+Belagavi,+Karnataka+590001/data=!4m2!3m1!1s0x3bbf66bc84b9e6dd:0x22cbbfa16fb0cbf0?utm_source=mstt_1&entry=gps&lucs=karto&g_ep=CAESCTExLjYzLjcwNBgAIIgnKgVrYXJ0b0ICSU4%3D';">Location</button>
+					<h1>BELAGAVI FORT</h1>
+					<h5>Devotion of <span>Belagavi</span></h5>
+					<p>One of the oldest forts in the state of Karnataka, Belagavi Fort is an architectural marvel. Built in the 13th century by the rulers of the Ratta dynasty, it boasts grand ramparts that protected the city from enemies. As you enter the fort complex, you will come across the shrines of Lord Ganpati and Goddess Durga, along with various mosques including the grand Safa Masjid. The minarets, domes and arches of the mosque reflect a seamless blend of Indo-Saracenic and Deccan styles of architecture. Built using stone and mud, the oval-shaped fort has huge bastions. The Deccan, the Indo-Saracenic and the Chalukyan styles of architecture can be spotted in the arches, domes and gateways of the fort. It also holds special importance in India's modern history as this was the place where the Britishers imprisoned Mahatma Gandhi during the freedom struggle. The fort remains open on all days of the week from 8 am to 6.30 pm.</p>
+				<br><button type="button" onclick="window.location.href='https://www.google.com/maps/place/Belagavi+Fort/@15.8593795,74.5243564,17z/data=!3m1!4b1!4m5!3m4!1s0x3bbf66c735eb779f:0x21627145ed9b9a0!8m2!3d15.8593795!4d74.5243564';">Location</button>
 					</div>
 			</div>
 		</section>
-<!--END OF DETAILS OF CONTENTS OF PLACE AND PHOTO-->
+ 
 	
-<!--DETAILS OF SLIDES-->
 		<div class="slideshow-container">
 			<div class="mySlides fade">
 			  <div class="numbertext">1 / 3</div>
-			  <img src="C:/Namma Belagavi/Images/kbl1.png" style="width:100%" height="350px">
-			  <div class="text">Mahalaxmi Devi</div>
+			  <img src="./Images/bgm fort5.jpg" style="width:100%" height="350px">
+			  <div class="text">Belagavi fort wall</div>
 			</div>
 			<div class="mySlides fade">
 			  <div class="numbertext">2 / 3</div>
-			  <img src="C:/Namma Belagavi/Images/kbl2.jpg" style="width:100%" height="350px">
-			  <div class="text">Mahalaxmi temple</div>
+			  <img src="./Images/bgm fort3.jpg" style="width:100%" height="350px">
+			  <div class="text">Belagavi fort</div>
 			</div>
 			<div class="mySlides fade">
 			  <div class="numbertext">3 / 3</div>
-			  <img src="C:/Namma Belagavi/Images/kbl4.jpg" style="width:100%" height="350px">
-			  <div class="text">Mahalaxmi temple</div>
+			  <img src="./Images/bgm fort4.jpg" style="width:100%" height="350px">
+			  <div class="text">Belagavi fort</div>
 			</div>
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -465,8 +538,6 @@ span
 			<span class="dot" onclick="currentSlide(1)"></span>
 			<span class="dot" onclick="currentSlide(2)"></span>
 			</div>
-
-<!--DETAILS OF JAVASCRIPT FOR SLIDES-->
 		  <script>
 			let slideIndex = 0;
 			let timeoutId = null;
@@ -507,26 +578,31 @@ span
 			  timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
 			}
 		  </script>
-	<!--END OF JAVASCRIPT OF SLIDES-->
-  <!-- END OF DETAILS OF SLIDES-->
 	
-<!--FOOTER DETAILS-->
+	
+
+
+
+
+
+
+
     <footer class="footer-distributed">
 
         <div class="footer-left">
             <h3>Bela<span>gavi</span></h3>
 
             <p class="footer-links">
-              <a href="C:/Namma Belagavi/index.html">Home</a>
+              <a href="./home.html">Home</a>
               |
-              <a href="C:/Namma Belagavi/New folder/About us.html">About</a>
+              <a href="./About us.html">About</a>
               |
-              <a href="C:/Namma Belagavi/New folder/Food.html">Food</a>
+              <a href="./Food.html">Food</a>
               |
-              <a href="C:/Namma Belagavi/New folder/Restauraunts.html">Hotels/Stay</a>
+              <a href="./Restauraunts.html">Hotels/Stay</a>
             </p>
 
-            <p class="footer-company-name">Copyright © 2025 <strong>BELAGAVI</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright © 2025<strong>BELAGAVI</strong> All rights reserved</p>
         </div>
 
         <div class="footer-center">
@@ -538,7 +614,7 @@ span
 
                 <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:sagarhiremath@gmail.com">Belagavi@gmail.com</a></p>
+                <p><a href="mailto:sagarhiremathssh.co@gmail.com">Belagavi@gmail.com</a></p>
             </div>
         </div>
         <div class="footer-right">
@@ -549,7 +625,17 @@ span
         </div>
     </footer>
 
-
-<!--END OF FOOTER DETAILS-->
 </body>
+
+
+
+
+
+
+
+
+
+
+	
+	</body>
  </html>
